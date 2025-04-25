@@ -29,7 +29,7 @@ credentials = service_account.Credentials.from_service_account_info(
 
 # Google Sheets setup
 client = gspread.authorize(credentials)
-sheet = client.open_by_key("1VS9EOMcn6SYjjOuhEr5axqfyJdg5ho1Un3btojDcoWc").sheet1
+sheet = client.open_by_key("1fjH5VTZI5ITZ9ar0pRPskVcwfIXw0nSnrMcUStWxb10").sheet1
 
 # Load the saved Naive Bayes model and TF-IDF vectorizer for predictions
 model = joblib.load("naïve_bayes_model.pkl")
